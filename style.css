@@ -8,7 +8,14 @@
   {scroll-behavior: smooth; box-sizing: border-box; font-family: "Poppins", sans-serif; 
    margin: 0px; padding: 0px;}
 
+.image 
+  {display: flex; align-items: center; justify-content: center; position: relative;}
+  
 /* Header */
+header 
+  {position: relative; overflow: hidden; background-color: var(--light-three);
+   width: 100%;}
+
 .overlay
   {position: absolute; overflow: hidden;
    width: 100%; height: 100%; top: 0px; left: 0px;}
@@ -22,6 +29,23 @@
 
 .overlay.overlay-lg .shapes.shape_y
   {height: 40px;}
+
+header .shape_v 
+  {right: 70%; top: 70%;}
+
+header .shape_x 
+  {right: 45%; top: 15%;} /*left: 50%; bottom: 82%;*/
+  
+header .shape_y 
+  {right: 10%; top: 45%;} /*bottom: 50%;*/
+
+header .shape_z 
+  {right: 15%; top: 20%;} /*bottom: 75%*/
+
+  
+  
+
+
 
 a {
   text-decoration: none;
@@ -69,12 +93,6 @@ img {
   margin-left: 1.5rem;
 }
 
-.image {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
 .z-index {
   position: relative;
@@ -185,13 +203,6 @@ img {
 /* End Genral Styles */
 
 /* Header */
-
-header {
-  width: 100%;
-  background-color: var(--light-three);
-  overflow: hidden;
-  position: relative;
-}
 
 nav {
   width: 100%;
@@ -335,30 +346,8 @@ header .points2 {
   left: 71%;
 }
 
-header .square {
-  right: 68%;
-  top: 71%;
-}
 
-header .triangle {
-  right: 7%;
-  bottom: 75%;
-}
 
-header .xshape {
-  right: 4%;
-  bottom: 50%;
-}
-
-header .half-circle1 {
-  left: 50%;
-  bottom: 82%;
-}
-
-header .half-circle2 {
-  left: 5%;
-  top: 67%;
-}
 
 header .wave1 {
   bottom: 75%;
