@@ -49,7 +49,7 @@ nav .container
 .link ul 
   {display: flex;}
   
-.links a 
+.link a 
   {display: inline-block; text-transform: uppercase; color: var(--dark-one);
    padding: 0.9rem 1.2rem; line-height: 1; transition: 0.5s;}
 
@@ -57,10 +57,10 @@ nav .container
   {background-color: var(--main-color); color: var(--light-one);
    margin-left: 1rem; padding: 0.9rem 2.1rem; border-radius: 2rem;}
 
-.links a:hover 
+.link a:hover 
   {color: var(--main-color);}
   
-.links a.button:hover 
+.link a.button:hover 
   {background-color: #6B44E0; color: var(--light-one);}
 
 .overlay
