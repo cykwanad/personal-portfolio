@@ -10,11 +10,58 @@
 
 .image 
   {display: flex; align-items: center; justify-content: center; position: relative;}
+
+a, ul
+  {text-decoration: none; list-style: none;}
+
+img 
+  {width: 100%;}
+  
+.points 
+  {position: absolute;
+   opacity: 30%;}
+
+.letter 
+  {position: absolute;
+   width: 15%; top: -10px; left: 15px; opacity: 5%;}
   
 /* Header */
 header 
   {position: relative; overflow: hidden; background-color: var(--light-three);
    width: 100%;}
+
+.logo 
+  {display: flex; align-items: center;
+   width: 100px;}
+
+nav 
+  {position: relative;
+   width: 100%; z-index: 50;}
+   
+.container 
+  {position: relative;
+   max-width: 90rem; margin: 0rem auto; padding: 0rem 4rem; z-index: 5;}
+
+nav .container 
+  {display: flex; align-items: center; justify-content: space-between;
+   height: 5rem;}
+
+.link ul 
+  {display: flex;}
+  
+.links a 
+  {display: inline-block; text-transform: uppercase; color: var(--dark-one);
+   padding: 0.9rem 1.2rem; line-height: 1; transition: 0.5s;}
+
+.link a.button 
+  {background-color: var(--main-color); color: var(--light-one);
+   margin-left: 1rem; padding: 0.9rem 2.1rem; border-radius: 2rem;}
+
+.links a:hover 
+  {color: var(--main-color);}
+  
+.links a.button:hover 
+  {background-color: #6B44E0; color: var(--light-one);}
 
 .overlay
   {position: absolute; overflow: hidden;
@@ -33,6 +80,9 @@ header
 header .shape_v 
   {right: 70%; top: 70%;}
 
+header .shape_w 
+  {right: 55%; top: 30%;} /*left: 38%; bottom: 63%;*/
+
 header .shape_x 
   {right: 45%; top: 15%;} /*left: 50%; bottom: 82%;*/
   
@@ -41,3 +91,9 @@ header .shape_y
 
 header .shape_z 
   {right: 15%; top: 20%;} /*bottom: 75%*/
+
+header .point_y
+  {width: 70%; top: 65%; left: 70%;}
+
+header .point_z
+  {width: 420px; bottom: -75px; left: -150px;}
