@@ -97,11 +97,11 @@ nav .container
    padding: 0.9rem 1.2rem; line-height: 1; transition: 0.5s;}
 
 .link a.button 
-  {background-color: var(--main-color); color: var(--pale-one);
+  {background-color: var(--main-color-one); color: var(--pale-one);
    margin-left: 1rem; padding: 0.9rem 2.1rem; border-radius: 2rem;}
 
 .link a:hover 
-  {color: var(--main-color);}
+  {color: var(--main-color-one);}
   
 .link a.button:hover 
   {background-color: #6B44E0; color: var(--pale-one);}
