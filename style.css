@@ -4,12 +4,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700;800&display=swap');
 
 /* General Styles */
+
+:root 
+  {--dark-one: #313131; --dark-two: #7A7A7A; --main-color-one: #784CFB;
+   --pale-one: #FEFEFE; --pale-two: #F9FAFB; --main-color-two: #F6F7FB;}
+
 *, *::before, *::after 
   {scroll-behavior: smooth; box-sizing: border-box; font-family: "Poppins", sans-serif; 
    margin: 0px; padding: 0px;}
-
-.image 
-  {display: flex; align-items: center; justify-content: center; position: relative;}
 
 a, ul
   {text-decoration: none; list-style: none;}
@@ -17,34 +19,75 @@ a, ul
 img 
   {width: 100%;}
   
-.points 
-  {position: absolute;
-   opacity: 30%;}
-
-.letter 
-  {position: absolute;
-   width: 15%; top: -10px; left: 15px; opacity: 5%;}
-  
 /* Header */
-header 
-  {position: relative; overflow: hidden; background-color: var(--light-three);
-   width: 100%;}
 
-.logo 
-  {display: flex; align-items: center;
-   width: 100px;}
+header 
+  {position: relative; overflow: hidden; background-color: var(--main-color-two);
+   width: 100%;}
 
 nav 
   {position: relative;
    width: 100%; z-index: 50;}
-   
+
+.overlay
+  {position: absolute; overflow: hidden;
+   width: 100%; height: 100%; top: 0px; left: 0px;}
+ 
+.points 
+  {position: absolute;
+   opacity: 30%;}
+  
+.letter 
+  {position: absolute;
+   width: 15%; top: -10px; left: 15px; opacity: 10%;}
+    
+.logo 
+  {display: flex; align-items: center;
+   width: 100px;}
+ 
 .container 
   {position: relative;
    max-width: 90rem; margin: 0rem auto; padding: 0rem 4rem; z-index: 5;}
 
+.hamburger-menu 
+  {display: none; align-items: center; justify-content: flex-end; position: relative;
+   width: 2.7rem; height: 3rem; z-index: 100;}
+ 
+header .shape-v 
+  {right: 70%; top: 70%;}
+ 
+header .shape-w 
+  {right: 55%; top: 30%;}
+ 
+header .shape-x 
+  {right: 45%; top: 15%;}
+
+header .shape-y 
+  {right: 10%; top: 45%;}
+ 
+header .shape-z 
+  {right: 15%; top: 20%;}
+ 
+header .point-y
+  {width: 70%; top: 65%; left: 70%;}
+ 
+header .point-z
+  {width: 420px; bottom: -75px; left: -150px;}
+   
 nav .container 
   {display: flex; align-items: center; justify-content: space-between;
    height: 5rem;}
+
+.overlay .shapes
+  {position: absolute; width: initial;
+   opacity: 15%;}
+  
+.overlay.overlay-lg .shapes
+  {height: 55px;}
+
+.hamburger-menu .bar 
+  {position: relative; background-color: var(--dark-one);
+   width: 2.1rem; height: 3px; border-radius: 3px; transition: 0.5s;}
 
 .link ul 
   {display: flex;}
@@ -54,46 +97,24 @@ nav .container
    padding: 0.9rem 1.2rem; line-height: 1; transition: 0.5s;}
 
 .link a.button 
-  {background-color: var(--main-color); color: var(--light-one);
+  {background-color: var(--main-color); color: var(--pale-one);
    margin-left: 1rem; padding: 0.9rem 2.1rem; border-radius: 2rem;}
 
 .link a:hover 
   {color: var(--main-color);}
   
 .link a.button:hover 
-  {background-color: #6B44E0; color: var(--light-one);}
-
-.overlay
-  {position: absolute; overflow: hidden;
-   width: 100%; height: 100%; top: 0px; left: 0px;}
-
-.overlay .shapes
-  {position: absolute; width: initial;
-   opacity: 15%;}
-
-.overlay.overlay-lg .shapes
-  {height: 55px;}
+  {background-color: #6B44E0; color: var(--pale-one);}
 
 .overlay.overlay-lg .shapes.shape_y
   {height: 40px;}
 
-header .shape_v 
-  {right: 70%; top: 70%;}
-
-header .shape_w 
-  {right: 55%; top: 30%;} /*left: 38%; bottom: 63%;*/
-
-header .shape_x 
-  {right: 45%; top: 15%;} /*left: 50%; bottom: 82%;*/
+.bar:before, .bar:after 
+  {content: ""; position: absolute; background-color: var(--dark-one);
+   width: 2.1rem; height: 3px; border-radius: 3px; transition: 0.5s;}
   
-header .shape_y 
-  {right: 10%; top: 45%;} /*bottom: 50%;*/
-
-header .shape_z 
-  {right: 15%; top: 20%;} /*bottom: 75%*/
-
-header .point_y
-  {width: 70%; top: 65%; left: 70%;}
-
-header .point_z
-  {width: 420px; bottom: -75px; left: -150px;}
+.bar:before 
+  {transform: translateY(-10px);}
+  
+.bar:after 
+  {transform: translateY(10px);}
