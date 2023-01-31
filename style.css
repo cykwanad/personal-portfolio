@@ -99,13 +99,13 @@ header .shape-y
 
 header .shape-z 
   {right: 15%; top: 20%;}
-
+  
 header .point-y
-  {width: 420px; bottom: -75px; left: -150px;}
+  {width: 70%; top: 65%; left: 70%;}
 
 header .point-z
-  {width: 70%; top: 65%; left: 70%;}
- 
+  {width: 420px; bottom: -75px; left: -150px;}
+
 nav .container 
   {display: flex; align-items: center; justify-content: space-between;
    height: 5rem;}
