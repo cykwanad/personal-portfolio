@@ -47,7 +47,7 @@ nav
  
 .container 
   {position: relative;
-   max-width: 90rem; margin: 0rem auto; padding: 0rem 4rem; z-index: 30;}
+   max-width: 75rem; margin: 0rem auto; padding: 0rem 4rem; z-index: 30;}
 
 .hamburger-menu 
   {display: none; align-items: center; justify-content: flex-end; position: relative;
